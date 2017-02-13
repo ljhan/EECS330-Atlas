@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas Music</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/map.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+      <nav class="navbar navbar-fixed-top navbar-inverse" id="top-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="home" href="#">Atlas Music</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+          <!--
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!-- /.nav-collapse -->
+       </div>
+    </nav>
+
+
+
+    <!-- <div id="map" class="col-xs-6"></div> --> 
+
+        <div class="container">
+      <div class="row row-offcanvas">
+<!--      <h3 id="intro">View your listening map or use the filter to refine the results.</h3>-->
+      </div>
+      <br>
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div>
+            <div id="map"></div>
+          </div>
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas row" id="sidebar">
+          <button type="button" class="btn btn-warning btn-block" id="filter"><span class = "glyphicon glyphicon-tasks"></span> Filter</button>
+          <form id="f_content">
+            <input type="text" name="genre" class="form-control" placeholder="Music genre">
+            <input type="text" name="place" class="form-control" placeholder="Place">
+            <!--<input type="date" class="form-inline col-xs-6" name="Start">
+            <input type="date" class="form-inline col-xs-6" name="End">-->
+            <input type="date" class="form-control" id="start-date" name="Start">
+            <input type="date" class="form-control" id="end-date" name="End">
+            <button type="button" class="btn btn-warning" onclick="filter()" id="submit"><span class = "	glyphicon glyphicon-search"></span> Submit</button>
+            <br>
+          </form>
+          <br>
+          <div class="list-group">
+            <a href="#" class="list-group-item" id="top_songs"><strong>TOP SONGS</strong> </a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Bad And Boujee</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Shape of You</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Closer</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Bad Things</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Black Beatles</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Starboy</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Fake Love</a>
+            <a href="#" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> 24K Magic</a>
+            
+            <a href="#" id="not-rock" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Paris</a>
+            <a href="#" id="not-rock" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Caroline</a>
+            <a href="#" id="not-rock" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Float On</a>
+            <a href="#" id="not-rock" class="list-group-item"><span class = "glyphicon glyphicon-music "></span> Primordial Sound</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+            <hr>
+
+      <footer>
+        <p style="color:white" class="pull-right">© 2017 Atlas, Inc.</p>
+      </footer>
+      </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../Off Canvas Template for Bootstrap_files/offcanvas.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmWUvW5PHcNLO4nmJTC1wwr7ILRxZDqCg&libraries=places&callback=initMap">
+    </script>
+  </body>
+</html>
