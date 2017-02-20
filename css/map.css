@@ -1,19 +1,61 @@
 #top-nav {
   opacity: 0.8;
   background-color: #24225d;
+/*  filter: blur(5px);*/
+}
+
+.title {
+  font-family: 'Concert One', cursive;
+  font-size: 1.35em;
+}
+
+.nav-title {
+  color: #fff;
 }
 
 #home {
-  color: lightblue;  
+  color: lightblue; 
+  font-family: 'Concert One', cursive;
+  font-size: 1.6em;
+}
+
+#home-title {
+  background-color: #f2ae43;
+}
+
+#friend-list-title {
+  background-color: lightblue;
 }
 
 #map{
   height:600px;
+/*  display: none;*/
 }
+
+#friend-map { 
+  height: 600px;
+  display: none;
+/*  background-color: red;*/
+}
+
+#blank-map {
+  height: 600px;
+  display: none;
+}
+
 #top_songs{
   text-align: center;
   background-color: lightblue;
 }
+
+.song {
+  display: none;
+}
+
+.f-text {
+  color: #fff;
+}
+
 #f_content{
   display: none;
   /*color: white;*/
@@ -28,6 +70,11 @@
   color: #dbdaf1;
 }
 
+#friendsList{
+  display: none;
+}
+
+
 /*
  * Style tweaks
  * --------------------------------------------------
@@ -36,6 +83,7 @@ html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
   background-color: #fff;
+  font-family: 'Muli', sans-serif;
 }
 body {
   padding-top: 70px;
