@@ -27,6 +27,26 @@
   background-color: lightblue;
 }
 
+.map-title {
+  color: #fff;
+/*  margin: 0 auto;*/
+  font-family: 'Concert One', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 14px;
+  background-color: #bdbdff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#select-map-title {
+  display: none;
+}
+
+#lao-map-title {
+  display: none;
+}
+
 #map{
   height:600px;
 /*  display: none;*/
