@@ -16,6 +16,15 @@ function openFriendsList(){
   document.getElementById("map").style.display = "none";
   document.getElementById("friends-title").style.backgroundColor = "#f2ae43";
   document.getElementById("home-title").style.backgroundColor = "inherit";
+  document.getElementById("my-map-title").style.display = "none";
+  document.getElementById("select-map-title").style.display = "inherit";
+  
+  var songs = document.querySelectorAll(".song");
+      
+  var i; // display the songs by genre
+  for (i = 0; i < songs.length; i++) {
+    songs[i].style.display = "none";
+  }
 }
 
 function closeFriendsList(){
@@ -26,16 +35,26 @@ function closeFriendsList(){
   document.getElementById("map").style.display = "inherit";
   document.getElementById("friends-title").style.backgroundColor = "inherit";
   document.getElementById("home-title").style.backgroundColor = "#f2ae43";
+  document.getElementById("my-map-title").style.display = "inherit";
+  
+  var songs = document.querySelectorAll(".song");
+      
+  var i; // display the songs by genre
+  for (i = 0; i < songs.length; i++) {
+    songs[i].style.display = "none";
+  }
 }
 
 // SELECT FRIEND MAP //
 document.getElementById("this-friend").addEventListener("click", function(){
     document.getElementById("friend-map").style.display = "inherit";
     document.getElementById("blank-map").style.display = "none";
+    document.getElementById("lao-map-title").style.display = "inherit";
+  document.getElementById("select-map-title").style.display = "none";
 });
 
 // "ZOOMING" //
-document.getElementById("map").addEventListener("mouseenter", function(){
+document.getElementById("map").addEventListener("click", function(){
 //    var zoomMap = document.getElementById("map");
 //    if (zoomMap.zoom > 10) {
 //      zoomMap.style.border = "solid 3px white";
@@ -48,14 +67,32 @@ document.getElementById("map").addEventListener("mouseenter", function(){
       }
 });
 
-document.getElementById("map").addEventListener("mouseleave", function(){
+//document.getElementById("map").addEventListener("mouseleave", function(){
+//      var songs = document.querySelectorAll(".song");
+//  
+//      var i; // display the songs by genre
+//      for (i = 0; i < songs.length; i++) {
+//        songs[i].style.display = "none";
+//      }
+//});
+
+document.getElementById("friend-map").addEventListener("click", function(){
       var songs = document.querySelectorAll(".song");
-  
+      
       var i; // display the songs by genre
       for (i = 0; i < songs.length; i++) {
-        songs[i].style.display = "none";
+        songs[i].style.display = "inherit";
       }
 });
+
+//document.getElementById("friend-map").addEventListener("mouseleave", function(){
+//      var songs = document.querySelectorAll(".song");
+//  
+//      var i; // display the songs by genre
+//      for (i = 0; i < songs.length; i++) {
+//        songs[i].style.display = "none";
+//      }
+//});
 
 
 // FILTER FUNCTION //
