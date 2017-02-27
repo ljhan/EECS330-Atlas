@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas Music</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/explore.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Muli" rel="stylesheet">
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyB1HFYqHTPeiuPdW7iXQ2p5Di3oQTejedk" type="text/javascript"></script>
+  </head>
+  <body>
+
+
+      <nav class="navbar navbar-fixed-top navbar-inverse" id="top-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="home" href="#" onclick="closeFriendsList()">Atlas Music</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="home-title" class="nav-title title"><a href="index.html">Home</a></li>
+            <li id="friends-title" class="nav-title title" onclick="openFriendsList()"><a href="index.html">Friends</a></li>
+            <li id="explore-title" class="nav-title title" onclick="openExplore()"><a href="#">Explore</a></li>
+          </ul>
+          <!--
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!-- /.nav-collapse -->
+       </div>
+    </nav>
+
+
+
+    <!-- <div id="map" class="col-xs-6"></div> --> 
+
+        <div class="container">
+      <div class="row row-offcanvas">
+<!--      <h3 id="intro">View your listening map or use the filter to refine the results.</h3>-->
+      </div>
+      <br>
+
+     
+        <div class="col-xs-18 col-sm-12" id="mapCanvas">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+            
+          <!-- PAGE TITLES -->
+          <div> 
+            
+            <div class="map-title" id="explore-map-title">Explore Listeners Around You</div>
+            
+            <!-- MAPS -->
+<!--
+            <div id="map"></div> 
+            <div id="friend-map"></div>
+            <div id="blank-map"></div>
+-->
+            <div id="explore-map"></div>
+            
+          </div>
+          
+<!--
+          <div id="radius" class="col-sm-3 list-group">
+            <a href="#" class="list-group-item title" id="friend-list-title"><strong>Radius</strong></a>
+                <a href="#" class="list-group-item">0.5 miles</a>
+                <a href="#" class="list-group-item">1.0 mile</a>
+                <a href="#" class="list-group-item">1.5 miles</a>
+                <a href="#" class="list-group-item">2.0 miles</a>
+          </div>
+-->
+          
+<div class="dropdown" id="radius-dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Select Radius
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="list-group-item radius-opt" id="radius1" href="explore.html" onclick="openExplore1">1.0 mi</a>
+    <a class="list-group-item radius-opt" id="radius2" href="explore2.html" onclick="openExplore2">2.0 mi</a>
+    <a class="list-group-item radius-opt" id="radius3" href="explore3.html" onclick="openExplore3">3.0 mi</a>
+  </div>
+</div>
+            
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+        <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+        <!-- # # # # # # # # # # # # EXPLORE PAGE # # # # # # # # # # # # -->
+        <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+        
+        
+
+        
+      </div><!--/row-->
+          
+            <hr>
+
+      <footer>
+        <p style="color:white" class="pull-right">© 2017 Atlas, Inc.</p>
+      </footer>
+      </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/explore3.js"></script> 
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/offcanvas.js"></script>
+<!--
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmWUvW5PHcNLO4nmJTC1wwr7ILRxZDqCg&libraries=places&callback=initMap">
+    </script>
+-->
+    
+    
+  </body>
+</html>
