@@ -174,7 +174,7 @@ $(document).ready(function(){
       //mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-    var you = 'http://maps.google.com/mapfiles/ms/micons/blue-dot.png';
+    var you = 'https://maps.google.com/mapfiles/ms/micons/blue-dot.png';
     new google.maps.Marker({
       position: new google.maps.LatLng(42.057796, -87.675918),
       map: map,
@@ -182,7 +182,7 @@ $(document).ready(function(){
     });
 
     var infowindow = new google.maps.InfoWindow();
-    var image = 'http://maps.google.com/mapfiles/ms/micons/man.png';
+    var image = 'https://maps.google.com/mapfiles/ms/micons/man.png';
 
     for (i = 0; i < locations.length; i++) {
       marker = new google.maps.Marker({
