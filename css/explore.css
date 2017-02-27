@@ -1,0 +1,180 @@
+#top-nav {
+  opacity: 0.8;
+  background-color: #24225d;
+/*  filter: blur(5px);*/
+}
+
+.title {
+  font-family: 'Concert One', cursive;
+  font-size: 1.35em;
+}
+
+.nav-title {
+  color: #fff;
+}
+
+#home {
+  color: lightblue; 
+  font-family: 'Concert One', cursive;
+  font-size: 1.6em;
+}
+
+#explore-title {
+  background-color: #f2ae43;
+}
+
+#friend-list-title {
+  background-color: lightblue;
+}
+
+.map-title {
+  color: #fff;
+/*  margin: 0 auto;*/
+  font-family: 'Concert One', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 14px;
+  background-color: #bdbdff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#select-map-title {
+  display: none;
+}
+
+#lao-map-title {
+  display: none;
+}
+
+#explore-map-title {
+  color: #fff;
+/*  margin: 0 auto;*/
+  font-family: 'Concert One', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 14px;
+  background-color: #bdbdff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#map{
+  height:600px;
+/*  display: none;*/
+}
+
+#friend-map { 
+  height: 600px;
+  display: none;
+/*  background-color: red;*/
+}
+
+#blank-map {
+  height: 600px;
+  display: none;
+}
+
+#explore-map {
+  height: 475px;
+}
+
+#top_songs{
+  text-align: center;
+  background-color: lightblue;
+}
+
+.song {
+  display: none;
+}
+
+.f-text {
+  color: #fff;
+}
+
+#f_content{
+  display: none;
+  /*color: white;*/
+  padding-top: 3px;
+}
+
+#submit {
+  /*opacity: 0.8;*/
+}
+
+#intro {
+  color: #dbdaf1;
+}
+
+#friendsList{
+  display: none;
+}
+
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background-color: #fff;
+  font-family: 'Muli', sans-serif;
+}
+body {
+  padding-top: 70px;
+  background-image: url("../photo/gradient.jpg");
+}
+footer {
+  padding: 30px 0;
+}
+
+/*input {
+  color: #000000;
+}
+*/
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
