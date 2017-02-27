@@ -75,6 +75,37 @@
             <div id="explore-map"></div>
             
           </div>
+          
+<!--
+          <div id="radius" class="col-sm-3 list-group">
+            <a href="#" class="list-group-item title" id="friend-list-title"><strong>Radius</strong></a>
+                <a href="#" class="list-group-item">0.5 miles</a>
+                <a href="#" class="list-group-item">1.0 mile</a>
+                <a href="#" class="list-group-item">1.5 miles</a>
+                <a href="#" class="list-group-item">2.0 miles</a>
+          </div>
+-->
+          
+<div class="dropdown" id="radius-dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Select Radius
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="list-group-item radius-opt" id="radius1" href="explore.html" onclick="openExplore1">1.0 mi</a>
+    <a class="list-group-item radius-opt" id="radius2" href="explore2.html" onclick="openExplore2">2.0 mi</a>
+    <a class="list-group-item radius-opt" id="radius3" href="explore3.html" onclick="openExplore3">3.0 mi</a>
+  </div>
+</div>
+<!--
+          <select>
+            <option value="select">Select Radius</option>
+            <option value="1.0">1.0 miles</option>
+            <option value="2.0">1.0 miles</option>
+            <option value="3.0">1.0 miles</option>
+            
+          </select>
+-->
+            
         </div><!--/.col-xs-12.col-sm-9-->
         
         <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
