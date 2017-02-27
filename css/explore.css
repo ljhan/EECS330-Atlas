@@ -39,6 +39,17 @@
   border-radius: 5px;
 }
 
+#radius-dropdown {
+  margin-top: 1%;
+  margin-left: 45%;
+  
+}
+
+.radius-opt {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 #select-map-title {
   display: none;
 }
