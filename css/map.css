@@ -4,6 +4,11 @@
 /*  filter: blur(5px);*/
 }
 
+#filter{
+  display: none;
+  margin-bottom: 11px;
+}
+
 .title {
   font-family: 'Concert One', cursive;
   font-size: 1.35em;
@@ -14,7 +19,7 @@
 }
 
 #home {
-  color: lightblue; 
+  color: lightblue;
   font-family: 'Concert One', cursive;
   font-size: 1.6em;
 }
@@ -25,6 +30,7 @@
 
 #friend-list-title {
   background-color: lightblue;
+  margin-top: 20px;
 }
 
 .map-title {
@@ -47,12 +53,24 @@
   display: none;
 }
 
+#explore-map-title {
+  color: #fff;
+/*  margin: 0 auto;*/
+  font-family: 'Concert One', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 14px;
+  background-color: #bdbdff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 #map{
   height:600px;
 /*  display: none;*/
 }
 
-#friend-map { 
+#friend-map {
   height: 600px;
   display: none;
 /*  background-color: red;*/
@@ -63,9 +81,42 @@
   display: none;
 }
 
+#explore-map {
+  height: 475px;
+}
+
 #top_songs{
   text-align: center;
   background-color: lightblue;
+  font-size: 200%
+}
+
+#select_location {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 100%;
+  background-color: lightblue;
+}
+
+#location_detail{
+  display: none;
+  background-color: lightblue;
+  font-family: 'Muli', sans-serif;
+  font-size: 100%;
+}
+
+#genre_rock{
+  display: none;
+  background-color: lightblue;
+  font-family: 'Muli', sans-serif;
+  font-size: 100%;
+}
+
+#when{
+  display: none;
+  background-color: lightblue;
+  font-family: 'Muli', sans-serif;
+  font-size: 100%;
 }
 
 .song {
@@ -83,6 +134,8 @@
 }
 
 #submit {
+  margin-top: 5px;
+  margin-bottom: 10px;
   /*opacity: 0.8;*/
 }
 
@@ -94,6 +147,9 @@
   display: none;
 }
 
+.list-group{
+  margin-top: -19px;
+}
 
 /*
  * Style tweaks
@@ -158,7 +214,7 @@ footer {
 
   .sidebar-offcanvas {
     position: absolute;
-    top: 0;
+    top: 3;
     width: 50%; /* 6 columns */
   }
 }
