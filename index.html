@@ -27,7 +27,7 @@
           <ul class="nav navbar-nav">
             <li id="home-title" class="nav-title title"><a href="index.html">Home</a></li>
             <li id="friends-title" class="nav-title title" onclick="openFriendsList()"><a>Friends</a></li>
-            <li id="explore-title" class="nav-title title"><a href="#">Explore</a></li>
+            <li id="explore-title" class="nav-title title" onclick="openExplore()"><a href="explore.html">Explore</a></li>
           </ul>
           <!--
           <form class="navbar-form navbar-right">
@@ -46,7 +46,7 @@
 
 
 
-    <!-- <div id="map" class="col-xs-6"></div> --> 
+    <!-- <div id="map" class="col-xs-6"></div> -->
 
         <div class="container">
       <div class="row row-offcanvas">
@@ -59,37 +59,51 @@
         <div id="friendsList" class="col-sm-3 list-group">
 <!--            <a href="javascript:void(0)" class="closebtn list-group-item" onclick="closeFriendsList()">&times;</a>-->
             <a href="#" class="list-group-item title" id="friend-list-title"><strong>Friends</strong></a>
+            <a href="#" class="list-group-item">Alice</a>
+            <a href="#" class="list-group-item">Andrea</a>
+            <a href="#" class="list-group-item">Barry</a>
+            <a href="#" class="list-group-item">Beth</a>
+            <a href="#" class="list-group-item">Bi</a>
+            <a href="#" class="list-group-item">Chris</a>
+            <a href="#" class="list-group-item">Cory</a>
+            <a href="#" class="list-group-item">Drew</a>
+            <a href="#" class="list-group-item">Jennifer</a>
             <a href="#" class="list-group-item" id="this-friend">Lao</a>
             <a href="#" class="list-group-item">Lu</a>
-            <a href="#" class="list-group-item">Niu</a>
-            <a href="#" class="list-group-item">Bi</a>
-            <a href="#" class="list-group-item">Cory</a>
-            <a href="#" class="list-group-item">Beth</a>
-            <a href="#" class="list-group-item">Jennifer</a>
             <a href="#" class="list-group-item">Nathan</a>
-            <a href="#" class="list-group-item">Drew</a>
+            <a href="#" class="list-group-item">Niu</a>
         </div>
         <div class="col-xs-12 col-sm-9" id="mapCanvas">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
-            
+
+          <!-- PAGE TITLES -->
           <div>
             <div class="map-title" id="my-map-title">My Listening Map</div>
             <div class="map-title" id="lao-map-title">Lao's Listening Map</div>
             <div class="map-title" id="select-map-title">Select a friend to see their listening map</div>
-            
-            <div id="map"></div> <!-- MAP -->
+<!--            <div class="map-title" id="explore-map-title">Explore Listeners Around You</div>-->
+
+            <!-- MAPS -->
+            <div id="map"></div>
             <div id="friend-map"></div>
             <div id="blank-map"></div>
+<!--            <div id="explore-map"></div>-->
+
           </div>
         </div><!--/.col-xs-12.col-sm-9-->
+
+        <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+        <!-- # # # # # # # # # # # # EXPLORE PAGE # # # # # # # # # # # # -->
+        <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas row" id="sidebar">
           <button type="button" class="btn btn-warning btn-block title" id="filter"><span class = "glyphicon glyphicon-tasks"></span> Filter</button>
           <form id="f_content">
-            <span class="f-text">Genre: </span><input type="text" name="genre" class="form-control" placeholder="Music genre">
-            <span class="f-text">Location: </span><input type="text" name="place" class="form-control" placeholder="Place">
+            <span class="f-text">Genre: </span><input type="text" name="genre" class="form-control" id="genre" placeholder="Music genre">
             <!--<input type="date" class="form-inline col-xs-6" name="Start">
             <input type="date" class="form-inline col-xs-6" name="End">-->
             <span class="f-text">Start: </span><input type="date" class="form-control" id="start-date" name="Start">
@@ -100,6 +114,10 @@
           <br>
           <div class="list-group">
             <a href="#" class="list-group-item title" id="top_songs"><strong>TOP SONGS</strong> </a>
+            <a href="#" class="list-group-item title" id="select_location"><strong>Select a location to view top songs</strong> </a>
+            <a href="#" class="list-group-item title" id="location_detail"><strong>&#8226 Location: Northwestern University Library</strong> </a>
+            <a href="#" class="list-group-item title" id="genre_rock"><strong>&#8226 Genre: Rock</strong> </a>
+            <a href="#" class="list-group-item title" id="when"><strong>&#8226 When: 02/11/17 - 02/13/17</strong> </a>
             <a href="#" class="list-group-item song hiphop"><span class = "glyphicon glyphicon-music "></span> Bad And Boujee</a>
             <a href="#" class="list-group-item song pop"><span class = "glyphicon glyphicon-music "></span> Shape of You</a>
             <a href="#" class="list-group-item song pop"><span class = "glyphicon glyphicon-music "></span> Closer</a>
