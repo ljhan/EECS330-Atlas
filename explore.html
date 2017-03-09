@@ -52,11 +52,13 @@
         <div class="container">
       <div class="row row-offcanvas">
 <!--      <h3 id="intro">View your listening map or use the filter to refine the results.</h3>-->
+        
+        
       </div>
       <br>
 
      
-        <div class="col-xs-18 col-sm-12" id="mapCanvas">
+        <div class="col-xs-12 col-sm-9" id="mapCanvas">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
@@ -73,6 +75,7 @@
             <div id="blank-map"></div>
 -->
             <div id="explore-map"></div>
+    
             
           </div>
           
@@ -86,8 +89,8 @@
           </div>
 -->
           
-<div class="dropdown" id="radius-dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="dropup" id="radius-dropdown">
+  <button class="btn btn-secondary dropdown-toggle radius-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   Select Radius
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -107,6 +110,19 @@
 -->
             
         </div><!--/.col-xs-12.col-sm-9-->
+          
+          <div class="row row-offcanvas row-offcanvas-right">    
+      <div class="col-xs-6 col-sm-3 sidebar-offcanvas row" id="sidebar">      
+            <!-- explore song list -->
+        <div class="list-group" id="explore-song-list">
+            <a href="#" class="list-group-item title" id="top_songs"><strong>SONGS PLAYING NEAR YOU</strong> </a>
+            <a href="#" class="list-group-item ex-song hiphop" onclick="findCaroline()"><span class = "glyphicon glyphicon-music "></span> Caroline</a>
+            <a href="#" class="list-group-item ex-song rock"><span class = "glyphicon glyphicon-music "></span> Float On</a>
+            <a href="#" class="list-group-item ex-song rock"><span class = "glyphicon glyphicon-music "></span> Primordial Sound</a>
+            <a href="#" class="list-group-item ex-song hiphop"><span class = "glyphicon glyphicon-music "></span> Starboy</a> 
+          </div>
+      </div>
+    </div>
         
         <!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
         <!-- # # # # # # # # # # # # EXPLORE PAGE # # # # # # # # # # # # -->
