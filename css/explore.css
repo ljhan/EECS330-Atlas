@@ -14,7 +14,7 @@
 }
 
 #home {
-  color: lightblue; 
+  color: lightblue;
   font-family: 'Concert One', cursive;
   font-size: 1.6em;
 }
@@ -42,7 +42,12 @@
 #radius-dropdown {
   margin-top: 1%;
   margin-left: 45%;
-  
+
+}
+
+.radius-btn {
+  background-color: #f2ae43;
+  color: #fff;
 }
 
 .radius-opt {
@@ -75,7 +80,7 @@
 /*  display: none;*/
 }
 
-#friend-map { 
+#friend-map {
   height: 600px;
   display: none;
 /*  background-color: red;*/
@@ -87,7 +92,7 @@
 }
 
 #explore-map {
-  height: 475px;
+  height: 485px;
 }
 
 #top_songs{
@@ -121,6 +126,35 @@
   display: none;
 }
 
+#iw-container {
+	margin-bottom: 3px;
+}
+
+#iw-container .iw-content {
+  width: auto;
+	background-color: lightgreen;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+.iw-content img {
+	float: left;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+.iw-subTitle {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 13px 0;
+}
+.now_playing{
+  padding-top: 15px;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.song_info {
+  font-size: 15px;
+}
 
 /*
  * Style tweaks
