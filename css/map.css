@@ -66,12 +66,12 @@
 }
 
 #map{
-  height:600px;
+  height:610px;
 /*  display: none;*/
 }
 
 #friend-map {
-  height: 600px;
+  height: 610px;
   display: none;
 /*  background-color: red;*/
 }
