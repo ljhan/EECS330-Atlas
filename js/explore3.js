@@ -145,7 +145,7 @@ var Jenna_D= '<div id="iw-container">' +
 var carolineLoc = new google.maps.LatLng(42.057916, -87.675551);
 
 function findCaroline() {
-  infowindow.setContent(locations[10][0]);
+  infowindow.setContent(locations[9][0]);
   infowindow.open(map, marker);
   map.setCenter(carolineLoc);
   map.setZoom(24);
