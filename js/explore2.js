@@ -76,10 +76,10 @@ var Kent_R= '<div id="iw-container">' +
    [Kelsey_M, 42.057996, -87.676640, 7],
    [Lucas_G, 42.057799, -87.676194, 6],
    [Sandy_P, 42.057995, -87.675918, 5],
-   [John_S, 42.057916, -87.675551, 4],
    [Drew_C, 42.058791, -87.675463, 3],
    [Barry_C, 42.058066, -87.674444, 2],
-    [Kent_R, 42.057548, -87.673618, 1]
+   [Kent_R, 42.057548, -87.673618, 1],
+   [John_S, 42.057916, -87.675551, 4],
     ];
 
     var map = new google.maps.Map(document.getElementById('explore-map'), {
